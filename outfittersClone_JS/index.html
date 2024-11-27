@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfitters Official Online Store</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="img/logo.svg" width="100%" height="100%">
+        </div>
+    </nav>
+
+    <div class="hero-section"></div>
+    <main>
+
+        <div id="sel-flex">
+            <select name="select" id="select">
+                <option value="all">All</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="tshirts" onclick="load()">T-shirts</option>
+                <option value="trousers">Trousers</option>
+                <option value="shoes">Footwears</option>
+            </select>
+        </div>
+
+        <h1 id="hoodie-heading">Hoodies.</h1>
+        <div id="hoodie-cont" class="card-cont"></div>
+
+        <h1 id="tShirt-heading">T-shirts.</h1>
+        <div id="tShirt-cont" class="card-cont"></div>
+
+        <h1 id="trouser-heading">Trousers.</h1>
+        <div id="trouser-cont" class="card-cont"></div>
+
+        <h1 id="shoe-heading">Footwears.</h1>
+        <div id="shoe-cont" class="card-cont"></div>
+    </main>
+
+
+    <footer>
+        <div style="text-align: left;" class="footer-section">
+            <ul>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Log In/Sign Up</a></li>
+                <li><a href="#">How To Buy</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Shipping & Deliveries</a></li>
+                <li><a href="#">Exchange & Returns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section footer-logo">
+            <img src="img/logo.svg">
+        </div>
+
+        <div style="text-align: right;" class="footer-section">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Retail Stores</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Work With Us</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            © Copyrights Reserved by Outfitters 2024
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
