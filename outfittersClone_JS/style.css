@@ -11,7 +11,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: Host Grotesk;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -22,6 +24,27 @@ body {
 
 body {
     background-color: #ffffff;
+}
+
+#director {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+#director a {
+    margin-bottom: 30px;
+    color: gainsboro;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    
+}
+
+#director a:hover {
+    border-bottom: 1px solid gainsboro;
 }
 
 .logo {
@@ -78,6 +101,7 @@ body {
 }
 
 h1 {
+    margin-top: 50px;
     font-size: 40px;
     margin-left: 25px;
     font-weight: 800;
@@ -117,19 +141,21 @@ h1 {
     justify-content: end;
     align-items: center;
     padding-right: 40px;
+    padding-top: 10px;
 }
 
 #sel-flex select {
     outline: none;
     font-size: 17px;
     padding: 5px 8px;
-    border-radius: 7px;
     cursor: pointer;
     padding: 9px;
+    padding-left: 0px;
 }
 
 #sel-flex option {
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .card-cont {
@@ -143,15 +169,16 @@ h1 {
 }
 
 #select {
-    background-color: gainsboro;
     border: none;
+    border-bottom: 1px solid black;
     outline: none;
-    font-weight: 800;
+    font-weight: 700;
     padding: 20px;
+    transition: all 0.3s;
 }
 
-#select:active {
-    background-color: rgba(220, 220, 220, 0.503);
+#select:hover {
+    background-color: rgb(245, 244, 244);
 }
 
 footer {
@@ -185,10 +212,6 @@ footer .footer-section ul li a {
     font-size: 14px;
 }
 
-footer .footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
 footer .footer-logo {
     font-size: 24px;
     font-weight: bold;
@@ -207,5 +230,110 @@ footer .copyright {
 
     footer .footer-section {
         text-align: center;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    main {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .footer-logo img {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    main {
+        max-width: 75%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    main {
+        max-width: 65%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:2300px) {
+    main {
+        max-width: 55%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:2700px) {
+    main {
+        max-width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:3000px) {
+    main {
+        max-width: 45%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .card {
+        width: 195px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-section {
+        background-position: 58%;
+    }
+
+    .logo img {
+        margin: 25px 10px;
+        width: 40vw;
+    }
+
+    .capsule {
+        font-size: 10px;
+        padding: 7px;
+    }
+
+    .card {
+        width: 175px;
+    }
+
+    .card-cont {
+        margin-left: 20px;
+    }
+
+    .title {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 11px;
+    }
+
+    .footer-section {
+        text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    .footer-logo img {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .card {
+        width: 155px;
+    }
+}
+
+@media screen and (min-width:690px) {
+    .hero-section {
+        background-position: center;
     }
 }
